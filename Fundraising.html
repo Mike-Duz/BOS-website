@@ -3,27 +3,70 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        @font-face {
+            font-family: Gabarito;
+            src: url(fonts/Gabarito-VariableFont_wght.ttf);
+        }
         * {
-         margin: 0;
-         padding: 0;
-         }
+            margin: 0;
+            padding: 0;
+        }
         .header-logo {background-color:#357096;
-        font-family: lexend;
-        height: 120px;
-        float left;
-        vertical-align: baseline;
+            font-family: Gabarito,serif;
+            height: 120px;
+            vertical-align: baseline;
         }
         .header-right {
-        float: right;
-        margin-top: 40px;
-        margin-right: 20px
+            float: right;
+            margin-top: 35px;
+            margin-right: 20px
         }
         a {
-        color: rgb(0,50,70);
-        text-decoration: none;
+            color: rgb(0,50,70);
+            text-decoration: none;
         }
         .body {
-        background-color:#82B0CD;
+            background-color:#82B0CD;
+            font-family: Gabarito,serif;
+            height: 100%;
+            color: rgb(50,100,50);
+            text-align: center;
+        }
+        .footer {
+            background-color:#E4B97E;
+            font-family: Gabarito;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        p1 {
+            font-family: Gabarito,serif;
+            color:RGB(135, 145, 150);
+            font-size: 40px;
+        }
+        p2 {
+            font-family: Gabriola,serif;
+            color:RGB(53, 112, 120);
+            font-size: 35px;
+            text-decoration: none;
+        }
+        .left-text {
+            text-align: left;
+        }
+        .center-text {
+            text-align: center;
+        }
+        .donation_button{
+            font-family: Gabarito;
+            color:#ED9520;
+            text-decoration: none;
+            position:fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: rgb(0,200,0); /* Green */
+            padding: 15px;
+            border-radius: 25px;
         }
     </style>
 </head>
@@ -47,3 +90,33 @@
         </div>
     </h1>
 </div>
+<div class="body">
+    <h2>
+        <br>
+    </h2>
+</div>
+
+<footer class="footer">
+    <head1>
+        <h1 class = "left-text">
+            <a style="font-size: 20px; font-weight: bold; font-family: Gabarito, 'Times New Roman', Times, serif;">Contact Us</a>
+        </h1>
+    </head1>
+    <p class="left-text"><a href="https://www.instagram.com/melonsinthecosmos/">Instagram: @BoxOfScraps</a></p>
+    <p class="left-text"><a href="mailto:michaeldub@boxofscraps.net">Email: box of scraps</a></p>
+
+    <p class="left-text"><a href="https://www.instagram.com/">some other social media</a></p>
+    <head2>
+        <h2 class="center-text">
+            <a href="#top">Back to Top</a></h2>
+    </head2>
+</footer>
+</body>
+<donation_button class="donation_button">
+
+    <style>.button{text-align: right;}</style>
+    <p class="button"><a href="https://hcb.hackclub.com/donations/start/box-of-scraps"target="blank">Donate Now!</a></p>
+
+</donation_button>
+
+</html>
