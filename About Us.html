@@ -10,6 +10,7 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         .header-logo {background-color:#357096;
             font-family: Gabarito,serif;
@@ -29,7 +30,7 @@
             background-color:#82B0CD;
             font-family: Gabarito,serif;
             height: 100%;
-            color: rgb(50,100,50);
+            color: RGB(115, 125, 130);
             text-align: center;
         }
         .footer {
@@ -68,6 +69,20 @@
             padding: 15px;
             border-radius: 25px;
         }
+
+        .column {
+            float: left;
+            width: 48%;
+            padding: 6px;
+            height: 200px;
+            align-content: center;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
 </head>
 
@@ -92,8 +107,28 @@
 </div>
 <div class="body">
     <h2>
-        <br>
+        <p1>Our Mission<br></p1>
+        <p2>To educate a new generation of cirtical thinking engineers to innovate our futures.</p2>
     </h2>
+    <div class="row" style="margin-left: 60px">
+        <div class="column" style="background-color: rgb(130, 166, 185);">
+            <h2>Who are we?</h2>
+            <p>Some text..</p>
+        </div>
+        <div class="column" style="background-color:rgb(130, 166, 185);">
+            <h2>Image</h2>
+        </div>
+    </div>
+
+    <div class="row" style="margin-left: 60px; margin-top: 20px;">
+        <div class="column" style="background-color: rgb(130, 166, 185);">
+            <h2>Image</h2>
+        </div>
+        <div class="column" style="background-color:rgb(130, 166, 185);">
+            <h2>Who are we?</h2>
+            <p>Some text..</p>
+        </div>
+    </div>
 </div>
 
 <footer class="footer">
